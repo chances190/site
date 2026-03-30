@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}} | my_minimal_blog</title>
+    <link rel="icon" type="image/svg+xml" href="{{nav_prefix}}assets/favicon.ico">
+    <link rel="stylesheet" href="{{nav_prefix}}assets/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h1>Sanches</h1>
+                <nav>
+                    <a href="{{nav_prefix}}home.html">home</a>
+                    <a href="{{nav_prefix}}about.html">about</a>
+                    <a href="{{nav_prefix}}blog/index.html">blog</a>
+                    <a href="{{nav_prefix}}projects.html">projects</a>
+                    <a href="{{nav_prefix}}notes.html">notes</a>
+                    <a href="https://c.xkcd.com/random/comic/">random xkcd</a>
+                </nav>
+            </div>
+        </header>
+        <article>
+            {{content}}
+        </article>
+        <hr>
+        <footer>
+            <p><small></small></p>
+            <p><a href="https://c.xkcd.com/random/comic/"></a><em id="quote"></em></a></p>
+            <script>
+                const quotes = {{quotes}}
+                const q = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById('quote').textContent = `"${q.quote}" — ${q.author}`;
+            </script>
+        </footer>
+    </main>
+</body>
+
+</html>
