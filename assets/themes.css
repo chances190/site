@@ -1,0 +1,90 @@
+:root {
+    /* Light theme - Grays */
+    --gray-1: #eeebe5;
+    --gray-2: #eae6de;
+    --gray-3: #e2dbd0;
+    --gray-4: #dbd2c0;
+    --gray-5: #d4cab6;
+    --gray-6: #cec0a6;
+    --gray-7: #c5b494;
+    --gray-8: #b6a074;
+    --gray-9: #897141;
+    --gray-10: #7e6737;
+    --gray-11: #5d4b24;
+    --gray-12: #2e1d00;
+
+    /* Light theme - Reds */
+    --red-1: #edebea;
+    --red-2: #ece5e3;
+    --red-3: #e8d8d4;
+    --red-4: #e8cac2;
+    --red-5: #e5bcb1;
+    --red-6: #deac9f;
+    --red-7: #d69888;
+    --red-8: #cb7c69;
+    --red-9: #9a3016;
+    --red-10: #881e00;
+    --red-11: #972d13;
+    --red-12: #55271c;
+
+    /* Semantic mappings - Light theme */
+    --bg-primary: var(--gray-1);
+    --bg-secondary: var(--gray-2);
+    --interactive-primary: var(--gray-3);
+    --interactive-secondary: var(--gray-4);
+    --interactive-tertiary: var(--gray-5);
+    --border-primary: var(--gray-6);
+    --border-secondary: var(--gray-7);
+    --border-tertiary: var(--gray-8);
+    --accent-primary: var(--red-9);
+    --accent-secondary: var(--red-10);
+    --text-secondary: var(--gray-11);
+    --text-primary: var(--gray-12);
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Dark theme - Grays */
+        --gray-1: #30352d;
+        --gray-2: #353a32;
+        --gray-3: #3c4137;
+        --gray-4: #40463a;
+        --gray-5: #434a3d;
+        --gray-6: #495141;
+        --gray-7: #525d48;
+        --gray-8: #667459;
+        --gray-9: #6c8058;
+        --gray-10: #768a64;
+        --gray-11: #adbe9f;
+        --gray-12: #ebefe7;
+
+        /* Dark theme - greens */
+        --green-1: #33342c;
+        --green-2: #36372f;
+        --green-3: #414332;
+        --green-4: #4b4f2f;
+        --green-5: #555932;
+        --green-6: #606436;
+        --green-7: #6b7038;
+        --green-8: #777e3a;
+        --green-9: #959e24;
+        --green-10: #89920d;
+        --green-11: #bac457;
+        --green-12: #e0e8b0;
+
+        /* Semantic mappings - Dark theme */
+        --bg-primary: var(--gray-1);
+        --bg-secondary: var(--gray-2);
+        --interactive-primary: var(--gray-3);
+        --interactive-secondary: var(--gray-4);
+        --interactive-tertiary: var(--gray-5);
+        --border-primary: var(--gray-6);
+        --border-secondary: var(--gray-7);
+        --border-tertiary: var(--gray-8);
+        --accent-primary: var(--green-9);
+        --accent-secondary: var(--green-10);
+        --text-secondary: var(--gray-11);
+        --text-primary: var(--gray-12);
+    }
+}

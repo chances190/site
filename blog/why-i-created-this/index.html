@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal site and blog">
+    <title>Why I Created This | Sanches</title>
+    <link rel="icon" type="image/svg+xml" href="https://chances190.github.io/site/assets/favicon.ico">
+    <!-- <link rel="stylesheet" href="https://chances190.github.io/site/assets/reset.css"> -->
+    <link rel="stylesheet" href="https://chances190.github.io/site/assets/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Sanches</h1>
+            <nav>
+                
+                <a href="https://chances190.github.io/site">home</a>
+                
+                <a href="https://chances190.github.io/site/about">about</a>
+                
+                <a href="https://chances190.github.io/site/blog">blog</a>
+                
+                <a href="https://chances190.github.io/site/projects">projects</a>
+                
+                <a href="https://chances190.github.io/site/notes">notes</a>
+                
+                <a rel="external" href="https://c.xkcd.com/random/comic/">random xkcd</a>
+            </nav>
+        </header>
+        <article>
+            
+            <p>I found a little corner of the web that doesn’t suck</p>
+<p>There’s this place called tildeverse. it’s just a bunch of shared shell servers where people host personal pages, gopher sites, whatever. Most of it is text-based, with little to no js. Some of them are blogs, some are silly little games, some are just whatever the author was feeling like.</p>
+<p>I was just so, so tired of the usual places. Twitter only has doomcel content and ragebait these days(especially since we’re kind of heading towards WW3).  Not even the usual art posts and cat pics. It’s not even fun to &gt;argue&lt; there anymore, there’s only bots now. Reddit… well it’s reddit, the stereotypes exist for a reason. And don’t even get me started on Linkedin, that kind of performative bullshit pisses me off. If that’s what it takes to find a decent job then I better get used to being unemployable.</p>
+<p>Then I stumbled upon <a href="https://chances190.github.io/site/blog/why-i-created-this/tildeclub.com">tildeclub.com</a>. Apparently it’s a thing. The place looks like what I think the internet loooked like before I was allowed on computers. Random little sites, just left there in case someone stumbles onto them. Each one feels like a peak into the authors mind. The way someone styles their site and what content they post says a lot about each of them. It’a a breath of fresh air. </p>
+<p>They remind me of when I used to play on pirate Minecraft servers that didn’t reset their “/tp overworld” very often, so you’d walk trough a wasteland and randomly come by a villa of claimed plots. In each house, the owner’s style, work, personality. Tiny houses, HUGE farms, some things broken, blown up. Pixel arts, empty chests. Strip mining tunnels that go on and on and on. I used to wonder how they came to be.</p>
+<p>My own builds are gone. public servers closed, LAN servers in the computers of friends that moved on. Funny to think how there are people with whom I’d speend hours and hours working and playing together, building massive farms and redstone automation, just to one day drift apart and leave it all to memory. I wonder how they are doing now.</p>
+<p>Anyways, the tilde thing inspired me to create this site. A place my thoughts and projects can call home, so I don’t forget them and leave them behind.</p>
+
+            
+        </article>
+        <hr>
+        <footer>
+            <p><em id="quote"></em></p>
+            <script>
+                fetch('/assets/quotes.json')
+                    .then(r => r.json())
+                    .then(quotes => {
+                        const q = quotes[Math.floor(Math.random() * quotes.length)];
+                        document.getElementById('quote').textContent = `"${q.quote}" — ${q.author}`;
+                    })
+                    .catch(e => console.log('Failed to load quotes:', e));
+            </script>
+        </footer>
+    </main>
+</body>
+
+</html>
