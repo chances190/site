@@ -1,7 +1,15 @@
 #!/bin/bash
 
-datetime=$(date +%Y-%m-%d-%H%M)
-note="./content/notes/${datetime}.txt"
+datetime_iso=$(date +'%Y-%m-%dT%H:%M:%S')
+datetime_slug=$(date +'%Y-%m-%dT%H-%M-%S')
+note="./content/notes/${datetime_slug}.md"
+
+cat > "$note" << EOF
+---
+date: "$datetime_iso"
+---
+
+EOF
 
 if [[ -n "$1" ]]; then
     echo "$1" >> "$note"

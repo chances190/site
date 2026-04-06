@@ -1,2 +1,17 @@
-<h1>Projects</h1>
-{{entries}}
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+
+{% if section.pages %}
+{% for page in section.pages %}
+<section>
+    {{ page.content | safe }}
+</section>
+{% endfor %}
+{% endif %}
+{% if section.content %}
+<br />
+{{ section.content | safe }}
+{% endif %}
+{% endblock %}

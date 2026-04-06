@@ -1,0 +1,26 @@
+# Zola configuration
+base_url = "https://sanches.dev"
+title = "Sanches"
+author = "Sanches"
+description = "Personal site and blog"
+default_language = "en"
+
+output_dir = "public"
+build_search_index = false
+
+[markdown]
+render_emoji = true
+smart_punctuation = true
+
+[markdown.highlighting]
+theme = "github-light"
+
+[extra]
+nav = [
+  { url = "/", label = "home" },
+  { url = "/about/", label = "about" },
+  { url = "/blog/", label = "blog" },
+  { url = "/projects/", label = "projects" },
+  { url = "/notes/", label = "notes" },
+  { url = "https://c.xkcd.com/random/comic/", label = "random xkcd" },
+]

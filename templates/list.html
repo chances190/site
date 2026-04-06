@@ -5,10 +5,7 @@
 
 {% if section.pages %}
 {% for page in section.pages | reverse %}
-<section>
-    <p><small>[{{ page.date | date(format="%Y-%m-%d") }}]</small></p>
-    {{ page.content | safe }}
-</section>
+<p><small>[{{ page.date | date(format="%Y-%m-%d") }}]</small> <a href="{{ page.permalink }}">{{ page.title }}</a></p>
 {% endfor %}
 {% endif %}
 {% endblock %}

@@ -1,4 +1,6 @@
-# about me
+---
+title: "About Me"
+---
 
 computer engineer by trade. work mainly with embedded systems and IoT security.
 

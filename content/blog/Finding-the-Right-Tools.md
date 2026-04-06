@@ -1,4 +1,7 @@
-# Finding the Right Tools
+---
+title: "Finding the Right Tools"
+date: "2026-04-05"
+---
 
 Not every problem needs the shiniest solution.
 
