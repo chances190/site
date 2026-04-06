@@ -1,7 +1,7 @@
 #!/bin/bash
 
 datetime_iso=$(date +'%Y-%m-%dT%H:%M:%S')
-datetime_slug=$(date +'%Y-%m-%dT%H-%M-%S')
+datetime_slug=$(date +'%Y-%m-%d_%H-%M-%S')
 note="./content/notes/${datetime_slug}.md"
 
 cat > "$note" << EOF
