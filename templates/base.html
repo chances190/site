@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ config.description }}">
     <title>{% if page %}{{ page.title }}{% else %}{{ section.title }}{% endif %} | {{ config.title }}</title>
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico">
-    <!-- <link rel="stylesheet" href="/assets/reset.css"> -->
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="{{ get_url(path='/assets/favicon.ico') }}">
+    <!-- <link rel="stylesheet" href="{{ get_url(path='/assets/reset.css') }}"> -->
+    <link rel="stylesheet" href="{{ get_url(path='/assets/style.css') }}">
 </head>
 
 <body>
@@ -16,8 +17,9 @@
             <h1>Sanches</h1>
             <nav>
                 {% for item in config.extra.nav %}
-                <a href="{{ item.url | safe }}">{{ item.label }}</a>
+                <a href="{{ get_url(path=item.path) | safe }}">{{ item.label }}</a>
                 {% endfor %}
+                <a rel="external" href="https://c.xkcd.com/random/comic/">random xkcd</a>
             </nav>
         </header>
         <article>
@@ -29,8 +31,7 @@
         </article>
         <hr>
         <footer>
-            <p><small></small></p>
-            <p><a href="https://c.xkcd.com/random/comic/"></a><em id="quote"></em></a></p>
+            <p><em id="quote"></em></p>
             <script>
                 fetch('/assets/quotes.json')
                     .then(r => r.json())
