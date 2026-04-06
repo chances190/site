@@ -1,6 +1,6 @@
 ---
 ---
 
-## [arch-setup](https://github.com/chances190/arch-setup)
+## [dotfiles](https://github.com/chances190/dotfiles)
 
 my dotfiles

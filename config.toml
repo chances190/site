@@ -1,19 +1,18 @@
-# Zola configuration
-base_url = "https://sanches.dev"
+base_url = "https://chances190.github.io"
 title = "Sanches"
 author = "Sanches"
 description = "Personal site and blog"
 default_language = "en"
 
 output_dir = "public"
-build_search_index = false
+build_search_index = true
 
 [markdown]
 render_emoji = true
 smart_punctuation = true
 
 [markdown.highlighting]
-theme = "github-light"
+theme = "github-dark"
 
 [extra]
 nav = [
